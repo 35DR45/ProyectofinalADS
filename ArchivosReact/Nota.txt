@@ -1,1 +1,2 @@
-Aqui van los componentes de react, para luego compilarlos y pasar en index y el main.js
+Aqui van los componentes de react, para luego compilarlos y pasar el index y el main.js
+Copiar toda la carpeta src
