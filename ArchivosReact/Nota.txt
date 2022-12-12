@@ -1,0 +1,1 @@
+Aqui van los componentes de react, para luego compilarlos y pasar en index y el main.js
