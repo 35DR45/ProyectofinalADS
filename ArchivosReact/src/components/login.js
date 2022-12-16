@@ -1,9 +1,5 @@
 import React from "react";
-import Form from "react-bootstrap/Form"
-import Button from "react-bootstrap/Button"
 import $ from "jquery"
-import { browserHistory } from "react-router";
-import ReactDOM from "react-dom"
 import Home from "./home"
 
 class Login extends React.Component {
@@ -40,19 +36,21 @@ class Login extends React.Component {
       padding: '5px'
     }
     const qId = (new URLSearchParams(window.location.search).get("val") == "true") ? true : false;
-    const undiv = <div className="center-container" style={styles} id="equis">
-      <h1 className="AlignCenter" > LOGIN </h1>
-      <div class="form-group">
-        <label class="form-label" for="User">Usuario</label>
-        <input placeholder="Ingrese el usuario" type="text" id="User" class="form-control" />
-      </div>
-      <div class="form-group"><label class="form-label" for="password">Password</label>
-        <input placeholder="Ingrese su contraseña" type="password" id="password" class="form-control" />
-
-      </div>
-      <button className="btn btn-primary" onClick={() => this.validar(document.getElementById("User").value, document.getElementById("password").value)}>
-        Sumit
-      </button>
+    const undiv = <div class="container w-100" style={styles} id="equis">
+      <main class="form-signin w-50 m-auto">
+          <h1 class="p-5 AlignCenter">ADS Sketch RNN</h1>
+          <div class="pb-3 form-floating">            
+            <label for="User">Usuario:</label>
+            <input placeholder="Ingrese el usuario" type="text" id="User" class="form-control" />
+          </div>
+          <div class="pb-3 form-floating">
+            <label for="password">Password:</label>
+            <input placeholder="Ingrese su contraseña" type="password" id="password" class="form-control" />            
+          </div>
+          <button class="AlignCenter w-75 btn btn-lg btn-primary" onClick={() => this.validar(document.getElementById("User").value, document.getElementById("password").value)}>
+            Ingresar
+          </button>
+      </main>
     </div>
     const esValido = (this.state.val) || qId ? <Home></Home> : undiv
     return (
