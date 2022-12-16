@@ -1,0 +1,55 @@
+.MarginContainer {
+    margin-top: 24px;
+}
+
+.AlignCenter {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.CustomLink {
+    color: white;
+    text-decoration: none;
+}
+
+.CustomLink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.M-6 {
+    margin:6px;
+}
+
+.ImageContainer {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+.contenedor1{
+    background-color: "white";
+    min-width: 100vw;
+    height: 100vh;
+}
+.right{
+    background-color: rgb(7, 41, 64);
+    width: 25%;
+    height: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transform: translateY(60%);
+}
+.loginContainer{
+    height: 75%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(7, 41, 64);
+    border-radius: 20px;
+    transform: translateY(8%);
+}
+.button{
+    width: 85%;
+}
