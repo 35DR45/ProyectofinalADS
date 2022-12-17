@@ -2,7 +2,6 @@ package API;
 
 import java.io.*;
 import java.sql.*;
-
 public class DB implements java.io.Serializable {
        private String url;
        private String driver;
