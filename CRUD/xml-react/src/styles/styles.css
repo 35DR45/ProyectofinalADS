@@ -1,0 +1,45 @@
+.MarginContainer {
+    background-color: rgb(44,48,52);
+    min-height: 100vh;
+}
+
+.Card1Container {
+    background-color: rgb(44,48,52);
+    min-width: 90%;
+    min-height: 90vh;
+}
+
+.DrawContainer {
+    min-width: 95%;
+    min-height: 65vh;
+}
+
+
+.AlignCenter {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: white;
+    border: none;
+}
+
+.CustomLink {
+    color: white;
+    text-decoration: none;
+}
+
+.CustomLink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.M-6 {
+    margin:6px;
+}
+
+.ImageContainer {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
