@@ -36,7 +36,7 @@ class Info extends React.Component {
         const {id, pregunta, respuesta, drags, targets } = this.state;
         const url = "http://localhost:8080/Crud/Imagenes/BD"+new URLSearchParams(window.location.search).get("id")+".PNG";
         return (
-            <Container className="MarginContainer" fluid>
+            <Container className="MarginContainer" fluid id="sketch">
                 <br></br>
                 <Card
                     bg='dark'

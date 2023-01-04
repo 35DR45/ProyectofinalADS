@@ -1,6 +1,6 @@
-import React, {useRef} from "react";
+import React from "react";
+import Test from "./test";
 import { Button, Container, Card, Form} from "react-bootstrap";
-import CanvasDraw from "react-canvas-draw";
 const availableModels = ['bird', 'ant','ambulance','angel','alarm_clock',
 'antyoga','backpack','barn','basket','bear','bee','beeflower','bicycle',
 'book','brain','bridge','bulldozer','bus','butterfly','cactus','calendar',
@@ -20,6 +20,7 @@ const availableModels = ['bird', 'ant','ambulance','angel','alarm_clock',
 'strawberry','swan','swing_set','the_mona_lisa','tiger','toothbrush',
 'toothpaste','tractor','trombone','truck','whale','windmill','yoga',
 'yogabicycle'];
+
 class Canvas extends React.Component{
     render() {
         return (
@@ -40,7 +41,7 @@ class Canvas extends React.Component{
                             Selecciona un modelo:
                         </Form.Label>
                         <Form.Label>
-                        <Form.Control as="select">
+                        <Form.Control as="select" id="selectModels">
                                 {availableModels.map((a) => {
                                     return <option> {a} </option>
                                 })}
@@ -48,30 +49,21 @@ class Canvas extends React.Component{
                         </Form.Label>
                     </Form.Group>
                 </Form>
-                <div className="AlignCenter">
-                <CanvasDraw
-                brushRadius={1}
-                lazyRadius={0}
-                hideGrid={true}
-                className="DrawContainer"
-                ref={canvasDraw => (this.saveableCanvas = canvasDraw)}
-                />
+                <div className="AlignCenter1" id="sketch">
+                <Test/>
                 </div>
-                <br></br>
-                <Button
-                onClick={() => {
-                    console.log(this.saveableCanvas.getDataURL());
-                    }}
-                >
-                    HOLAAAAAA
+                <Button id="btnRetry" variant="outline-primary" className="M-6">
+                    Reintentar
                 </Button>
-                <Button variant="outline-primary" onClick={() => window.location.href = "/Crud/"} className="M-6">
+                <Button id="btnClear" variant="outline-warning" className="M-6">
+                    Limpiar
+                </Button>
+                <Button variant="outline-danger" className="M-6" onClick={() => window.location.href = "/Crud/"}>
                     Regresar
-                    </Button>
-                    <Button variant="outline-success" onClick={() => {
-                localStorage.setItem( "savedDrawing", this.saveableCanvas.getSaveData() ); }}>
+                </Button>
+                <Button variant="outline-success" className="M-6" id="btnSave">
                     Crear
-                    </Button>
+                </Button>
                 </Card.Body>
                 </Card>
             </Container>

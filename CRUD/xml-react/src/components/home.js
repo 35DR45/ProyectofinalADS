@@ -62,13 +62,6 @@ class Home extends React.Component {
                                 </Button>
                             </Link>
                         </div>
-                        <div>
-                            <Link to="/Crud/prueba" className="CustomLink">
-                                <Button variant="outline-info" style={{ margin: "12px" }}>
-                                    Canvas
-                                </Button>
-                            </Link>
-                        </div>
                     </Card.Body>
                 </Card>
                 <br /><br />
