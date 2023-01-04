@@ -21,6 +21,13 @@ const availableModels = ['bird', 'ant','ambulance','angel','alarm_clock',
 'toothpaste','tractor','trombone','truck','whale','windmill','yoga',
 'yogabicycle'];
 
+const handleClickPrueba = (event) => {
+    //Eliminar
+  const temp = document.getElementById("defaultCanvas0");
+  const urldata = temp.toDataURL();
+  console.log(urldata);
+}
+
 class Canvas extends React.Component{
     render() {
         return (
@@ -61,7 +68,7 @@ class Canvas extends React.Component{
                 <Button variant="outline-danger" className="M-6" onClick={() => window.location.href = "/Crud/"}>
                     Regresar
                 </Button>
-                <Button variant="outline-success" className="M-6" id="btnSave">
+                <Button variant="outline-success" className="M-6" id="btnSave" onClick={handleClickPrueba}>
                     Crear
                 </Button>
                 </Card.Body>
