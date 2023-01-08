@@ -28,7 +28,7 @@ public class Preguntas extends HttpServlet {
         String Driver ="com.mysql.cj.jdbc.Driver";
         String Url = "jdbc:mysql://localhost/crudjson";
     Class.forName(Driver);
-    Connection db = DriverManager.getConnection(Url, "root", "root");
+    Connection db = DriverManager.getConnection(Url, "root", "1234");
     Statement s = db.createStatement();    
     
     String Query="select * from tablajson;";
