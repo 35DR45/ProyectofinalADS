@@ -13,7 +13,7 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        axios.get("http://localhost:8080/Crud/Preguntas").then(response => {
+        axios.get("http://localhost:8080/2021630285IDPF/Preguntas").then(response => {
             this.setState({ data: response.data });
         }).catch(error => {
             console.info(error);

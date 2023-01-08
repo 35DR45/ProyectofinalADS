@@ -20,13 +20,14 @@ public class Eliminar extends HttpServlet {
         String ide = request.getParameter("id");
     try{
         String Driver ="com.mysql.cj.jdbc.Driver";
-        String Url = "jdbc:mysql://localhost/crudjson";
-    Class.forName(Driver);
-    Connection db = DriverManager.getConnection(Url, "root", "root");
-    Statement s = db.createStatement();    
-    String Query="DELETE FROM tablajson WHERE JSON_EXTRACT(columnajson,'$.id') = '"+ide+"'";
-    s.executeUpdate(Query);
-    out.write(ide);
+        String Url = "jdbc:mysql://localhost/2021630285IDPF";
+        DB bd = new DB();
+        bd.setConnection(Driver, Url);
+        String Query="DELETE FROM dibujos WHERE JSON_EXTRACT(columnajson,'$.id') = '"+ide+"'";
+        bd.executeUpdate(Query);
+        Class.forName(Driver);
+        Connection db = DriverManager.getConnection(Url, "root", "1234");
+        out.write(ide);
     }
     catch(ClassNotFoundException | SQLException e){
     e.printStackTrace();

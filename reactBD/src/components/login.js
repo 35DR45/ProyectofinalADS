@@ -2,8 +2,6 @@ import React from "react";
 import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
 import $ from "jquery"
-import { browserHistory } from "react-router";
-import ReactDOM from "react-dom"
 import Home from "./home"
 
 class Login extends React.Component {

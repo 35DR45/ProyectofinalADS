@@ -1,3 +1,5 @@
-Api/Preguntas.class
-Api/Imagenes.class
-Api/Eliminar.class
+Api\DB.class
+Api\Imagenes.class
+Api\Eliminar.class
+Api\Preguntas.class
+Api\Login.class

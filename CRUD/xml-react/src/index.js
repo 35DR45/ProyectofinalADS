@@ -15,13 +15,16 @@ const App = () => {
     return (
         <div>
             <Switch>
-                <Route exact path="/Crud/">
+                <Route exact path="/2021630285IDPF/">
+                    <Login />
+                </Route>
+                <Route exact path="/2021630285IDPF/Home">
                     <Home />
                 </Route>
-                <Route exact path="/Crud/info">
+                <Route exact path="/2021630285IDPF/info">
                     <Info />
                 </Route>
-                <Route exact path="/Crud/formulario">
+                <Route exact path="/2021630285IDPF/formulario">
                     <Dibujo />
                 </Route>
                 <Route path="*" render={() => <h1>Recurso no encontrado</h1>} />

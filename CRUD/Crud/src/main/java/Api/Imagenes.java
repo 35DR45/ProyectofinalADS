@@ -25,7 +25,7 @@ public class Imagenes extends HttpServlet {
     {
         String ruta = request.getRealPath("/");
             for(int i=1;i<ruta.length()-6;i++){
-                if(ruta.charAt(i-1) == '/' && ruta.charAt(i) == 't' && ruta.charAt(i+1) == 'a' && ruta.charAt(i+2) == 'r' && ruta.charAt(i+3) == 'g' && ruta.charAt(i+4) == 'e' && ruta.charAt(i+5) == 't'){
+                if((ruta.charAt(i-1) == '/'||ruta.charAt(i-1) == '\\') && ruta.charAt(i) == 't' && ruta.charAt(i+1) == 'a' && ruta.charAt(i+2) == 'r' && ruta.charAt(i+3) == 'g' && ruta.charAt(i+4) == 'e' && ruta.charAt(i+5) == 't'){
                     ruta = ruta.substring(0,i);
                 }
             }
