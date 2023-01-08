@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/styles.css"
 import Info from "./components/info";
 import Dibujo from "./components/dibujo"
+import Login from "./components/login"
 
 
 

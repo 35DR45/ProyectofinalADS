@@ -54,3 +54,31 @@
     height: 140px;
     object-fit: contain;
 }
+
+.loginContainer{
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(7, 41, 64);
+    border-radius: 20px;
+    transform: translateY(8%);
+    overflow: hidden;
+}
+.button{
+    width: 85%;
+}
+
+.contenedor1{
+    background-color: rgb(44,48,52);
+    min-width: 100%;
+    height: 100vh;
+}
+.right{
+    background-color: rgb(7, 41, 64);
+    width: 35%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transform: translateY(60%);
+}

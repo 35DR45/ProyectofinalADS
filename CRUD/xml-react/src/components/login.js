@@ -1,6 +1,5 @@
 import React from "react";
-import Form from "react-bootstrap/Form"
-import Button from "react-bootstrap/Button"
+import { Form, Button } from "react-bootstrap";
 import $ from "jquery"
 import Home from "./home"
 
@@ -22,7 +21,7 @@ class Login extends React.Component {
             password: password
         }
 
-        $.get("http://localhost:8080/Proyecto/Login",datos, (resultado)=>{
+        $.get("http://localhost:8080/2021630285IDPF",datos, (resultado)=>{
           if(resultado[0].usuario !="error"){
             this.state.val = true;
             this.forceUpdate();

@@ -7,7 +7,7 @@ const Pregunta = ({ id, pregunta }) => {
 
     const handleClickEliminar = (event) => {
         //Eliminar
-        axios.get(`http://localhost:8080/Crud/Eliminar?id=${id}`).then(
+        axios.get(`http://localhost:8080/2021630285IDPF/Eliminar?id=${id}`).then(
             response => {
             console.info(response.data);
             if (response.data.message) {
@@ -19,7 +19,7 @@ const Pregunta = ({ id, pregunta }) => {
             console.info(error);
             alert(response.data.message);
         }).finally(() => {
-            window.location.href = "/Crud/";
+            window.location.href = "/2021630285IDPF/";
         });
     }
 

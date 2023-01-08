@@ -15,7 +15,7 @@ class Info extends React.Component {
     componentDidMount() {
         const qId = new URLSearchParams(window.location.search).get("id");
         if (qId) {
-            axios.get("http://localhost:8080/Crud/Preguntas?id="+qId).then(response => {
+            axios.get("http://localhost:8080/2021630285IDPF/Preguntas?id="+qId).then(response => {
                 console.log(response.data.length);
                 var index;
                 for(var i=0;i<response.data.length;i++){
@@ -34,7 +34,7 @@ class Info extends React.Component {
     
     render() {
         const {id, pregunta, respuesta, drags, targets } = this.state;
-        const url = "http://localhost:8080/Crud/Imagenes/BD"+new URLSearchParams(window.location.search).get("id")+".PNG";
+        const url = "http://localhost:8080/2021630285IDPF/Imagenes/BD"+new URLSearchParams(window.location.search).get("id")+".PNG";
         return (
             <Container className="MarginContainer" fluid id="sketch">
                 <br></br>
